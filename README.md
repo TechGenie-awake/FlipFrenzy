@@ -8,8 +8,6 @@ A fun and interactive Memory Card Match game built with React.
 3. [Technologies Used](#technologies-used)
 4. [Installation](#installation)
 5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
 
 ## Introduction
 
@@ -49,10 +47,10 @@ npm install
 npm run dev
 ```
 ## Basic Controls:
-Click on cards to flip them.
+Click on cards to flip them.<br>
 Match all pairs to win the game.
 
 ## Game Modes:
-Easy Mode: Fewer cards.
-Medium Mode: A balanced number of cards.
+Easy Mode: Fewer cards.<br>
+Medium Mode: A balanced number of cards.<br>
 Hard Mode: More challenging with more cards.
