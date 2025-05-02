@@ -1,0 +1,85 @@
+@import "tailwindcss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1c29, #2c3e50);
+  color: white;
+  padding: 20px;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Consistent focus styles */
+:focus {
+  outline: 2px solid #6a11cb;
+  outline-offset: 3px;
+}
+
+/* Remove focus on mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(93, 92, 92);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(39, 78, 101);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(28, 90, 155);
+}
+
+/* Disable text selection on game elements */
+.card, .game-controls button {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Add base styles for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make sure all buttons have pointer */
+button {
+  cursor: pointer;
+}
+
+/* Responsive font sizes */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Animation for card matching */
+@keyframes matchFound {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); }
+  100% { transform: scale(1); }
+}
+
+.card-matched {
+  animation: matchFound 0.5s ease-out;
+}

@@ -1,0 +1,58 @@
+.game-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 16px 0;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: white;
+  }
+  
+  .primary-button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    box-shadow: 0 4px 8px rgba(37, 117, 252, 0.4);
+  }
+  
+  .primary-button:hover {
+    background: linear-gradient(45deg, #5700bd, #1b6be6);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(37, 117, 252, 0.5);
+  }
+  
+  .settings-button {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    box-shadow: 0 4px 8px rgba(255, 154, 158, 0.4);
+  }
+  
+  .settings-button:hover {
+    background: linear-gradient(45deg, #ff8a8e, #f9c0b4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 154, 158, 0.5);
+  }
+  
+  .sound-button {
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+    box-shadow: 0 4px 8px rgba(161, 140, 209, 0.4);
+  }
+  
+  .sound-button:hover {
+    background: linear-gradient(45deg, #917cc1, #fbb2e1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(161, 140, 209, 0.5);
+  }
+  
+  @media (max-width: 480px) {
+    button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,102 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.game-header {
+  margin-bottom: 24px;
+}
+
+.game-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #a18cd1);
+  -webkit-background-clip: text; /* WebKit-specific property */
+  background-clip: text; /* Standard property for compatibility */
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.game-subtitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.card-grid {
+  display: grid;
+  grid-gap: 16px;
+  justify-content: center;
+  perspective: 1000px;
+  margin: 32px auto;
+  max-width: 900px;
+}
+
+.start-game-prompt {
+  margin: 80px 0;
+  padding: 24px;
+  background: linear-gradient(
+  135deg,
+  rgba(255, 255, 255, 0.1) 0%,
+  rgba(255, 255, 255, 0.05) 100%
+);
+  border-radius: 8px;
+  color: white;
+}
+
+.game-over-message {
+  margin: 20px auto;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(106, 17, 203, 0.6), rgba(37, 117, 252, 0.6));
+  border-radius: 8px;
+  color: white;
+  animation: fadeIn 0.5s ease-in-out;
+  max-width: 600px;
+}
+
+.new-best-score {
+  font-weight: bold;
+  color: #ffd700;
+  animation: pulse 1s infinite;
+  margin-top: 8px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-gap: 10px;
+  }
+  
+  .game-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 10px;
+  }
+  
+  .card-grid {
+    grid-gap: 8px;
+  }
+  
+  .game-title {
+    font-size: 2rem;
+  }
+}
