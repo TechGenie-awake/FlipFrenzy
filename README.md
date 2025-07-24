@@ -26,7 +26,6 @@ A fun and interactive Memory Card Match game built with React.
 
 - **React:** JavaScript library for building user interfaces.
 - **Tailwind CSS:** Utility-first CSS framework for custom designs.
-- **Firebase:** For authentication and data storage.
 - **GitHub:** For version control and collaboration.
 
 ## Installation
